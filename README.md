@@ -34,4 +34,4 @@ To run this project locally:
 
 ## Live Preview
 
-Check out the live version of the product page: [Live Demo](<live-link>)
+Check out the live version of the product page: [Live Demo](https://softnio-nirjhor.vercel.app/)

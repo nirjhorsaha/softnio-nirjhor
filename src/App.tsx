@@ -15,8 +15,6 @@ function App() {
     const [selectedSize, setSelectedSize] = useState("S");
     const [quantity, setQuantity] = useState(0);
     const [showModal, setShowModal] = useState(false);
-    const [cart, setCart] = useState([]); 
-
 
     const handleDecrease = () => {
         if (quantity > 0) setQuantity(quantity - 1);
@@ -71,12 +69,11 @@ function App() {
             image: getImage(),
             name: "Classy Modern Smart Watch", 
             size: selectedSize,
-            quantity: quantity, // Add the quantity to the product details
+            quantity: quantity, 
             price: selectedSize === "S" ? 69 : selectedSize === "M" ? 79 : selectedSize === "L" ? 89 : 99, 
         };
-        setCart((prevCart) => [...prevCart, productDetails]);
 
-        console.log("Added to cart:", cart);
+        console.log("Added to cart:", productDetails);
     };
 
 
